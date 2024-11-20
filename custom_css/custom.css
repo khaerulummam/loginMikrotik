@@ -270,7 +270,7 @@
 .whatsapp-float .whatsapp-icon {
     min-width: 60px;
     height: 60px;
-    background: url("/images/icon-whatsapp.png") no-repeat center center;
+    background: url("images/icon-whatsapp.png") no-repeat center center;
     background-size: contain;
 }
 
