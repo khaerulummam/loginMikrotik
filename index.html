@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Gamma World MMA | LOGIN INTERNET NETWORK</title>
+
+
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+
+    <link rel="stylesheet" href="custom_css/custom.css">
+    <link rel="stylesheet" href="custom_css/countdown.css">
+    <link rel="stylesheet" href="custom_css/main.css" class="color-switcher-link">
+    <script src="js/vendor/modernizr-custom.js"></script>
+
+</head>
+
+<body>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+        <div id="box_wrapper">
+
+            <!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
+            <header class="page_header ds ms justify-nav-center s-pt-10 s-pb-10 gwc-bg">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-3 col-11">
+                            <a href="https://gammawc24.com" class="logo">
+                                <img src="images/gamma-pertacami.png"
+                                    srcset="images/gammawc24-pertacami.png 1x, images/gammawc24-pertacami@2x.png 2x"
+                                    alt="Gamma World MMA Logo">
+                            </a>
+                        </div>
+                        <div class="col-xl-10 col-lg-9 col-1 text-sm-center">
+
+                            <div class="nav-wrap">
+                                <nav class="top-nav">
+                                    <ul class="nav sf-menu">
+
+                                        <li class="">
+                                            <a href="https://gammawc24.com/home">Home</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://gammawc24.com/gallery">Gallery</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://gammawc24.com/merchandise">Merchandise</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://gammawc24.com/accomodation">Accomodation</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://gammawc24.com/news">News</a>
+                                        </li>
+
+                                    </ul>
+
+
+                                </nav>
+
+                                <div class="account-menu">
+                                    <ul class="page_topline ds ms c-my-10 s-py-15 small-text border-divided"
+                                        style="list-style: none;">
+
+                                        <li class="dropdown-account" style="list-style: none;">
+                                            <div class="dropdown show">
+                                                <a class="dropdown-toggle" href="#" role="button" id="dropdown-account"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-user"></i> My Account
+                                                </a>
+                                                <div class="dropdown-menu ls" aria-labelledby="dropdown-account">
+                                                    <a href="https://gammawc24.com/login"><i class="fa fa-sign-in"></i>
+                                                        Login</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header toggler -->
+                    <span class="toggle_menu"><span></span></span>
+            </header>
+
+            <section class="page_slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li class="ds text-left">
+                            <img src="/images/gammawc24-home-slide.jpg" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="intro_layers_wrapper intro_text_bottom">
+                                            <div class="intro_layers">
+                                                <div class="intro_layer" data-animation="fadeInRight">
+                                                    <h2 class="intro_featured_word special-heading">
+                                                        Gamma World MMA <br> Championships 2024
+                                                    </h2>
+                                                </div>
+                                                <div class="intro_layer short" data-animation="fadeInRight">
+                                                    <p class="intro_before_featured_word">Experience the ultimate
+                                                        fighting championship</p>
+                                                </div>
+                                                <div class="intro_layer woocommerce-Button" data-animation="fadeInLeft">
+                                                    <a href="https://event.detik.com/595/gamma-mma-world-championship-2024-senior---u18"
+                                                        target="_blank" class="btn btn-maincolor intro_button"
+                                                        style="min-width: 239px;">Get Tickets</a>
+                                                </div>
+
+                                                <div class="countdown-widget">
+                                                    <div id="countdown-{{ $keys }}" class="countdown"></div>
+                                                </div>
+                                                <script>
+                                                    // Countdown timer setup for each item
+                                                    const countdownDate = new Date("2024-12-06T23:59:59").getTime(); // Use the passed countdown date
+
+                                                    const countdownFunction = setInterval(() => {
+                                                        const now = new Date().getTime();
+                                                        const distance = countdownDate - now;
+
+                                                        // Time calculations for days, hours, minutes and seconds
+                                                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                                        // Display the result in the countdown div
+                                                        document.getElementById("countdown-{{ $keys }}").innerHTML = `
+                                                            <div class="flip-card">
+                                                                <div class="flip-card-inner">
+                                                                    <div class="flip-card-front">${days}d</div>
+                                                                    <div class="flip-card-back">${days} days</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flip-card">
+                                                                <div class="flip-card-inner">
+                                                                    <div class="flip-card-front">${hours}h</div>
+                                                                    <div class="flip-card-back">${hours} hours</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flip-card">
+                                                                <div class="flip-card-inner">
+                                                                    <div class="flip-card-front">${minutes}m</div>
+                                                                    <div class="flip-card-back">${minutes} minutes</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flip-card">
+                                                                <div class="flip-card-inner">
+                                                                    <div class="flip-card-front">${seconds}s</div>
+                                                                    <div class="flip-card-back">${seconds} seconds</div>
+                                                                </div>
+                                                            </div>
+                                                        `;
+
+                                                        // If the countdown is over, display a message
+                                                        if (distance < 0) {
+                                                            clearInterval(countdownFunction);
+                                                            document.getElementById("countdown-{{ $keys }}").innerHTML = "EXPIRED";
+                                                        }
+                                                    }, 1000);
+                                                </script>
+                                            </div> <!-- eof .intro_layers -->
+                                        </div> <!-- eof .intro_layers_wrapper -->
+                                    </div> <!-- eof .col-* -->
+                                </div><!-- eof .row -->
+                            </div><!-- eof .container-fluid -->
+                        </li>
+
+                        <li class="ds text-left">
+                            <img src="images/slider-home-2.jpg" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="intro_layers_wrapper intro_text_bottom">
+                                            <div class="intro_layers">
+                                                <div class="intro_layer" data-animation="fadeInRight">
+                                                    <h2 class="intro_featured_word special-heading">
+                                                        The Battle Begins
+                                                    </h2>
+                                                </div>
+                                                <div class="intro_layer short" data-animation="fadeInRight">
+                                                    <p class="intro_before_featured_word">
+                                                        Witness the fiercest battles
+                                                    </p>
+                                                </div>
+                                            </div> <!-- eof .intro_layers -->
+                                        </div> <!-- eof .intro_layers_wrapper -->
+                                    </div> <!-- eof .col-* -->
+                                </div><!-- eof .row -->
+                            </div><!-- eof .container-fluid -->
+                        </li>
+
+                        <li class="ds text-left">
+                            <img src="images/slider-home-3.jpg" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="intro_layers_wrapper intro_text_bottom">
+                                            <div class="intro_layers">
+                                                <div class="intro_layer" data-animation="fadeInRight">
+                                                    <h2 class="intro_featured_word special-heading">
+                                                        Champions Rise
+                                                    </h2>
+                                                </div>
+                                                <div class="intro_layer short" data-animation="fadeInRight">
+                                                    <p class="intro_before_featured_word">
+                                                        Cheer on your favorite fighters as they rise to the top
+                                                    </p>
+                                                </div>
+                                            </div> <!-- eof .intro_layers -->
+                                        </div> <!-- eof .intro_layers_wrapper -->
+                                    </div> <!-- eof .col-* -->
+                                </div><!-- eof .row -->
+                            </div><!-- eof .container-fluid -->
+                        </li>
+                    </ul>
+                </div> <!-- eof flexslider -->
+            </section>
+
+            <div class="featured-highlight p-lg-4">
+                <div class="maskot-highlight">
+                    <img src="images/maskot-red-pose-a.png"
+                        srcset="images/maskot-red-pose-a.png 1x, images/maskot-red-pose-a-2x.png 2x"
+                        alt="Maskot Red Pose A">
+                    <h3>STRENGTH</h3>
+                </div>
+                <div class="maskot-highlight">
+                    <img src="images/maskot-red-pose-b.png"
+                        srcset="images/maskot-red-pose-b.png 1x, images/maskot-red-pose-b-2x.png 2x"
+                        alt="Maskot Red Pose B">
+                    <h3>PERSERVERENCE</h3>
+                </div>
+                <div class="maskot-highlight">
+                    <img src="images/maskot-red-pose-c.png"
+                        srcset="images/maskot-red-pose-c.png 1x, images/maskot-red-pose-c-2x.png 2x"
+                        alt="Maskot Red Pose C">
+                    <h3>RESILENCE</h3>
+                </div>
+                <div class="maskot-highlight d-none d-md-block">
+                    <img src="images/maskot-red-pose-d.png"
+                        srcset="images/maskot-red-pose-d.png 1x, images/maskot-red-pose-d-2x.png') }} 2x"
+                        alt="Maskot Red Pose D">
+                </div>
+            </div>
+
+            <section class="ds s-py-90">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- <div class="d-none d-lg-block divider-70"></div> -->
+
+                        <main class="col-lg-12">
+                            <article>
+                                <!-- .entry-header -->
+                                <div class="entry-content">
+
+                                    <div class="woocommerce">
+
+                                        <form class="woocomerce-form woocommerce-form-login login" method="post">
+
+                                            <div class="woocommerce-message">
+                                                Username : gamma <br> Password : gammawc24
+                                            </div>
+
+                                            <p
+                                                class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide text-center">
+
+                                                <input type="text" placeholder="Username*"
+                                                    class="woocommerce-Input woocommerce-Input--text input-text"
+                                                    name="username" id="username" value="">
+
+                                                <span class="error invalid-feedback">
+                                                    invalid-feedback
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide text-center">
+
+                                                <input class="woocommerce-Input woocommerce-Input--text input-text"
+                                                    placeholder="Password*" type="password" name="password"
+                                                    id="password">
+                                            </p>
+
+                                            <p class="form-row text-center">
+                                                <button type="submit" class="woocommerce-Button button" name="login"
+                                                    value="Login">Login</button>
+
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- .entry-content -->
+                            </article>
+
+
+                        </main>
+
+                        <div class="d-none d-lg-block divider-70"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer class="ds page_title ds s-parallax  s-overlay s-py-50 s-py-lg-90 c-mb-20 c-mb-lg-0 s-pt-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12 text-center animate" data-animation="fadeInUp">
+                            <div class="widget widget_text">
+                                <a href="https://gammawc24.com" class="logo flex-column text-center">
+                                    <img src="images/gwc-24-logo.png"
+                                        srcset="images/gwc-24-logo.png 1x, images/gwc24-logo@2x.png 2x"
+                                        alt="Gamma World MMA Championships 2024">
+                                </a>
+                                <p>Gamma World MMA Championships 2024</p>
+                                <a href="https://www.pertacami.id" target="_blank">
+                                    <img width="250" src="images/gamma-pertacami.png"
+                                        srcset="images/gamma-pertacami.png 1x, images/gamma-pertacami@2x.png 2x"
+                                        alt="PERTACAMI Logo">
+                                </a>
+                                <p>This website and event are organized by PERTACAMI (Indonesia Mix Martial Art
+                                    Association • GAMMA INDONESIA)</p>
+
+                                <div class="widget widget_social_buttons">
+                                    <a href="https://instagram.com/pertacami_id"
+                                        class="fa fa-instagram border-icon rounded-icon" title="instagram"
+                                        target="_blank"></a>
+                                    <a href="https://gamma-sport.org" class="fa fa-globe border-icon rounded-icon"
+                                        title="website" target="_blank"></a>
+                                    <a href="https://www.pertacami.id" class="fa fa-globe border-icon rounded-icon"
+                                        title="website" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            <div class="whatsapp-float">
+                <a href="https://wa.me/6287825080720" target="_blank" rel="noopener noreferrer"
+                    aria-label="Chat on WhatsApp">
+                    <span class="whatsapp-icon"></span>
+                    <div class="cat-label">
+                        <h5 class="whatsapp-text">At your service</h5>
+                        <p class="whatsapp-text">Whatsapp Chat</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <section class="page_copyright ds s-py-10 s-py-md-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="divider-20 d-none d-lg-block"></div>
+                        <div class="col-md-12 text-center">
+                            <p>&copy; Copyright <span id="year"></span> All Rights Reserved</p>
+                        </div>
+                        <div class="divider-20 d-none d-lg-block"></div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div><!-- eof #box_wrapper -->
+    </div><!-- eof #canvas -->
+
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        const thisYear = new Date().getFullYear();
+        document.getElementById("year").textContent = thisYear;
+    </script>
+
+</body>
+
+</html>

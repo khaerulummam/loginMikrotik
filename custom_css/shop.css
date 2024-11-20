@@ -1,0 +1,26 @@
+.ds .ls {
+    background-color: #000000;
+    color: #808080;
+}
+
+.ds .ls a:not(.btn) {
+    color: white;
+}
+
+.dropdown .widget_shopping_cart .total {
+    background-color: rgb(240 240 240 / 19%);
+}
+
+.gwc-bg, .page_title.cover-background {
+    background: url("/img/gamma_pertacami/header-bg.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.header-cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.empty-cart-state {
+    padding-right: 0 !important;
+}

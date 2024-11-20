@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'Eurostile';
+    src: url('/fonts/Eurostile-Oblique.woff2') format('woff2'),
+        url('/fonts/Eurostile-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileBold.woff2') format('woff2'),
+        url('/fonts/EurostileBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eurostile Extended';
+    src: url('/fonts/EurostileExtended-Roman.woff2') format('woff2'),
+        url('/fonts/EurostileExtended-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EuroStyle';
+    src: url('/fonts/EuroStyleNormal.woff2') format('woff2'),
+        url('/fonts/EuroStyleNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* body {
+    font-family: 'Eurostile Extended', 'Arial', sans-serif;
+} */
+
+.gwc-bg,
+.page_title.cover-background {
+    background: url("/img/header-bg.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.featured-highlight {
+    background-color: #EE7D00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 10px 0;
+
+    @media (max-width: 768px) {
+        gap: 15px;
+    }
+
+    h3 {
+        font-family: 'Eurostile', 'Arial', sans-serif;
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.maskot-highlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gwc24-pattern,
+.page_title.s-parallax,
+.page_copyright.cover-background,
+.page_copyright.s-parallax {
+    background-image: url(/img/wave-pattern.jpg) !important;
+}
+
+.page_title.s-parallax,
+.page_copyright.cover-background,
+.page_copyright.s-parallax {
+    background-image: url(/img/wave-pattern.jpg) !important;
+    background-position: 100% 50% !important;
+}
+
+/* .featured-menu-wrapper {
+    display: flex;
+    padding: 50px 260px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 35px;
+    align-self: stretch;
+    flex-wrap: wrap;
+} */
+
+.featured-menu-item {
+    transition: transform 0.1s ease;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+
+.featured-menu-item:hover {
+    transform: scale(1.02);
+}
+
+.featured-menu-item .title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    color: var(--PRIMARY, white);
+    /* Default color */
+    padding: 20px 10px;
+    min-height: 72px;
+    max-height: 72px;
+    /* Added to limit the height to two lines */
+    line-height: 1.4;
+    /* Adjusted to ensure two lines fit within the max height */
+}
+
+/* Target the first two featured-menu-item titles */
+/* .featured-menu-wrapper li:nth-of-type(1) .title,
+.featured-menu-wrapper li:nth-of-type(2) .title {
+    color: white;
+} */
+
+.featured-menu-item .banner {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.featured-menu-item .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 170px;
+}
+
+.very-important {
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #ff141436;
+    border-radius: 4px;
+    border-left: 5px solid #ff0000;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.item-content h5 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.cap-custom-badge {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin-left: -7px;
+}
+
+@media (min-width: 1200px) {
+    #search_modal .widget:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100%;
+        background: url("/img/gamma_pertacami/gwc24-logo-black.png") no-repeat 0 0;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-highlight h3 {
+        font-size: 18px;
+    }
+
+    .maskot-highlight {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* account-menu on header START */
+@media (max-width: 1199px) {
+    .account-menu {
+        position: absolute;
+        top: 39px;
+        right: 60px;
+        z-index: 3;
+        padding: 10px 0;
+        min-width: 170px;
+    }
+
+    .account-menu .page_topline {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .account-menu .dropdown-account {
+        /* Adjust font size for mobile */
+        font-size: 14px;
+    }
+
+}
+
+/* Additional adjustment for very small screens */
+@media (max-width: 575px) {
+    .account-menu {
+        right: 50px;
+    }
+
+    .account-menu .dropdown-toggle {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+/* account-menu on header END */
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: #25D366;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 60px;
+}
+
+.whatsapp-float a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black !important;
+    width: 170px;
+    padding-right: 15px;
+}
+
+.whatsapp-float h5 {
+    color: black !important;
+}
+
+.whatsapp-float .whatsapp-icon {
+    min-width: 60px;
+    height: 60px;
+    background: url("/images/icon-whatsapp.png") no-repeat center center;
+    background-size: contain;
+}
+
+.whatsapp-float .whatsapp-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: 'Eurostile', 'Arial', sans-serif;
+    white-space: nowrap;
+    /* padding-left: 8px; */
+    font-size: 14px;
+}
+
+.whatsapp-float h5.whatsapp-text {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.whatsapp-float:hover {
+    width: 190px;
+}
+
+.cat-label {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust position for mobile screens */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+    }
+
+    .whatsapp-float .whatsapp-icon {
+        min-width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-float:hover {
+        width: 200px;
+    }
+
+    .whatsapp-float .whatsapp-text {
+        font-size: 12px;
+    }
+
+    .whatsapp-float h5.whatsapp-text {
+        font-size: 13px;
+    }
+}
+
+.badge {
+    padding: 0.4em 0.8em;
+    border-radius: 0;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-processing {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.badge-completed {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.badge-cancelled {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.badge-failed {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.ds .summary .price {
+    text-decoration: none;
+    opacity: 100%;
+    /* color: white; */
+    /* font-size: 24px; */
+    font-weight: 500;
+}
+
+.radio-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-check {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+.radio-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000000;
+    border: 2px solid #EE7D00;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-check:checked + .radio-btn {
+    background-color: #EE7D00;
+    color: white;
+    border-color: #EE7D00;
+}
+
+.radio-btn:hover {
+    background-color: #ff8b1a;
+    color: white;
+}
+
+.btn-check:checked + .radio-btn:hover {
+    background-color: #ff8b1a;
+}
+
+/* Override the radio button circle styles */
+input[type=radio] + label:before {
+    display: none !important;
+}
+
+input[type=radio]:checked + label:before {
+    display: none !important;
+}
+
+/* If needed, adjust the label padding since we removed the circle */
+.radio-btn {
+    margin-left: 0 !important;
+}
+
+/* Override main.css radio button styles */
+input[type=radio] + .radio-btn {
+    padding: 8px 16px !important;
+}
+
+/* Make the rule more specific to ensure it overrides */
+.radio-btn-group .radio-btn {
+    padding: 0 16px 8px 16px !important;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: white !important;
+}
